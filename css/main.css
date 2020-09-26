@@ -150,73 +150,63 @@ hr {
 
 @media only screen and (min-width: 38em) {
 
-  html {
-    font-size: 110%;
-    line-height: 1.4;
-  }
-
-  h1,
-  p {
-    margin: 0 0 1.4rem;
-  }
-
   header {
     display: flex;
-  }
-
-}
-
-@media only screen and (min-width: 60em) {
-
-  html {
-    font-size: 120%;
-    line-height: 1.5;
-  }
-
-  h1,
-  p {
-    margin: 0 0 1.5rem;
-  }
-
-  body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "logo nav nav"
-      "banner banner banner"
-      "text text text"
-      "viewing gravel symbolism"
-      "copyright";
-    column-gap: 1rem;
-    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    margin: 0;
   }
 
   .logo {
-    grid-area: logo;
+    justify-self: left;
+    margin-bottom: .75rem;
+    text-align: left;
   }
 
   nav {
-    grid-area: nav;
+    align-self: center;
   }
 
-  .banner {
-    grid-area: banner;
+  nav ul {
+    max-width: 28rem;
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    padding: 0;
   }
 
   .text {
-    grid-area: text;
+    margin: 0;
+    text-align: center;
+    max-width: 25rem;
   }
 
-  .viewing {
-    grid-area: viewing;
+  .text i {
+    font-size: 1.7rem;
+    justify-self: center;
   }
 
-  .gravel {
-    grid-area: gravel;
+  .text p {
+    font-size: 1rem;
+    margin-bottom: 2.6rem;
+    justify-self: center;
   }
 
-  .symbolism {
-    grid-area: symbolism;
+  .viewing > p:nth-of-type(2),
+  .gravel > p:nth-of-type(2),
+  .symbolism > p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+
+  footer {
+    text-align: center;
   }
 
 }

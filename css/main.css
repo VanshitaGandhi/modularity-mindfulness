@@ -27,6 +27,10 @@ img {
   width: 100%;
 }
 
+h1 {
+  margin: 0;
+}
+
 .logo {
   text-align: center;
 }
@@ -38,35 +42,45 @@ img {
 }
 
 .logo p {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: bold;
   margin: 0;
 }
 
-.banner,
+img,
 hr {
   margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .text i {
   font-size: 2rem;
   font-weight: normal;
   margin: 0;
-  text-align: center;
+  text-align: left;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: normal;
   margin: 0;
   text-align: center;
   margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .viewing,
 .gravel,
 .symbolism {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .viewing h3,
@@ -94,7 +108,14 @@ hr {
 .viewing > p:nth-of-type(1),
 .gravel > p:nth-of-type(1),
 .symbolism > p:nth-of-type(1) {
+  font-size: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.viewing > p:nth-of-type(2),
+.gravel > p:nth-of-type(2),
+.symbolism > p:nth-of-type(2) {
+  margin-bottom: 2.6rem;
 }
 
 nav ul {
@@ -103,7 +124,10 @@ nav ul {
   justify-content: space-around;
   max-width: 30em;
   text-align: center;
-  font-size: 1.5rem;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-top: 0;
+  padding: 0;
 }
 
 a {
@@ -118,6 +142,10 @@ a {
 
 footer > p {
   font-size: 1rem;
+}
+
+hr {
+  color: #e2e2e2;
 }
 
 @media only screen and (min-width: 38em) {

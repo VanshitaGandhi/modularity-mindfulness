@@ -25,3 +25,17 @@ img {
   display: block;
   width: 100%;
 }
+
+header {
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
